@@ -10,7 +10,33 @@ public class ResourcePile : Building
 {
     public ResourceItem Item;
 
-    public float ProductionSpeed = 0.5f;
+private float ProductionSpeedTrue = 0.5f;
+
+   [SerializeField] public float ProductionSpeed
+        {
+        get { return ProductionSpeedTrue; }
+
+        set
+            {
+                if (value < 0)
+
+                {
+
+                    value = 0;
+
+                }
+
+                ProductionSpeedTrue = value;
+            }
+    
+        }
+       
+
+
+
+
+
+
 
     private float m_CurrentProduction = 0.0f;
 

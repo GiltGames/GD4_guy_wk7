@@ -26,8 +26,10 @@ public class MenuUIHandler : MonoBehaviour
         
 
         ColorPicker.SelectColor(MainManager.Instance.TeamCol);
-        
 
+
+
+    
     }
 
 

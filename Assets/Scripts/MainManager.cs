@@ -5,7 +5,7 @@ using UnityEngine.TestTools;
 public class MainManager : MonoBehaviour
 {
 
-    public static MainManager Instance;
+    public static MainManager Instance { get; protected set; }
    public Color TeamCol;
     [SerializeField] string fileName = "/savefile.json";
 
